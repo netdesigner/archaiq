@@ -1,4 +1,4 @@
-name: Python Package Test
+name: Whole Test Suite
 
 on: [push]
 
@@ -8,10 +8,10 @@ jobs:
     strategy:
       matrix:
         python-version:
-          - 3.7
-          - 3.8
-          - 3.9
-          - 3.10
+          - '3.7'
+          - '3.8'
+          - '3.9'
+          - '3.10'
 
     steps:
       - uses: actions/checkout@v2
